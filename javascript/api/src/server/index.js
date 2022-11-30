@@ -1,15 +1,18 @@
 import express from "express";
 
+import router from "./routers/index.js"
+
 class App {
     server = express();
     port = process.env.PORT || 3001;
 
     constructor() {
-
+        this.router();
+        this.middleware();
     }
 
     router() {
-        this.server.use();
+        this.server.use(router);
     }
 
     middleware() {
@@ -22,3 +25,5 @@ class App {
         });
     }
 }
+
+export default new App();
