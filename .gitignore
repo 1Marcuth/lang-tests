@@ -1,5 +1,5 @@
-node_modules
-.venv
+**/node_modules/
+**/.venv/
 
 # Ruby On Rails
 

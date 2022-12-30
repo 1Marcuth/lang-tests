@@ -1,9 +1,7 @@
-namespace HelloWorldProgram
-{
-    class HelloWorld
-    {
-        static void Main() {
-            Console.WriteLine("Hello World");
-        }
-    }
+using System;
+
+class HelloWorldProgram {
+  public static void Main(string[] args) {
+    Console.WriteLine("Hello World");
+  }
 }
